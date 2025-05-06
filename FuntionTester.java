@@ -6,9 +6,18 @@ public class FuntionTester {
 		System.out.print("Enter an integer: ");
 		int number1 = keyboardInput.nextInt();
 
-		int  k = LearningFunctions.FindMultiples(number1);
+		System.out.print("Enter an integer: ");
+		int number2 = keyboardInput.nextInt();
 
-		System.out.print("The fifth multiple of the number you entered is " + k); 
+		System.out.print("Enter an integer: ");
+		int number3 = keyboardInput.nextInt();
+
+		System.out.print("Enter an integer: ");
+		int number4 = keyboardInput.nextInt();
+
+		int  k = LearningFunctions.AddFourNum(number1, number2, number3, number4);
+
+		System.out.print("The sum of the number you entered is " + k); 
 
 	}
 
