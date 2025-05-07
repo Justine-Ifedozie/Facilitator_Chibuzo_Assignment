@@ -41,6 +41,50 @@ public class LearningFunctions {
 
 		return sum;
 	} 
+//Function that receives age in years and returns a string.
+
+	public static String AgeString(int AgeYears) {
+	int years = AgeYears;
+	int months = AgeYears * 12;
+	double days = AgeYears * 365.25;
+	double minutes = AgeYears * 365.25 * 24 * 60;
+	double seconds = AgeYears * 365.25 * 24 * 60 * 60;
+
+	String display = "Age: " + AgeYears + " year(s), " + months + " months, " + days + " days, " + minutes + " minutes, " + seconds + " seconds";
+
+	return display;
+	}
+
+
+
+
+
+
+
+//Function for displaying dog age
+
+	public static String DisplayDogAge(String name, int humanYears) {
+	int dogyears = humanYears * 7;
+	String space = "   ";
+	String result = name + space + dogyears;
+	return result;
+	}
+
+
+
+
+//Method for finding the functions
+
+/*	int divisible = 0;
+
+	for (int count = 2000; count <= 3200; count++) {
+	if (count % 7 == 0) System.out.println(count);
+	} 
+
+	//divisible = count / 7;
+
+	} */
+
 
 //Method for finding out a leap year. (FunctionTester2)
 
@@ -52,6 +96,5 @@ public class LearningFunctions {
 	}
 	return determiner;
 	}
-
 
 }
