@@ -13,16 +13,22 @@ public class LearningFunctions {
 	}
 
 //Method for displaying the first 50 Prime numbers.
-	public static int PrimeNumber(int prime) {
-	      int num = 50, addMe = 0;
-	      for (int x = 1; x <= prime; x++) {
-	      if (prime % x == 0) {
-	      addMe = addMe + 1;
-		if (addMe == 2) System.out.print(prime);
-		}
-	       }
-	     return prime;
-	}
+public static void displayPrimeNumbers() {
+int counter1, counter2;
+int number = 50;
+    for (counter1 = 2; counter1 <= number; counter1++) {
+        boolean primeNum = true;
+        for (counter2 = 2; counter2 <= counter1/2; counter2++) {
+                if (counter1 % counter2 == 0) {
+                    primeNum = false;
+                    break;
+                            } //if statement closing brace
+                            } //Second for loop closing brace
+                           
+            if (primeNum) System.out.println(counter1 + " is a prime number");
+                    } //First for loop closing brace
+        } //Function closing brace
+
 
 
 //Method for computing the sum of four numbers. (FuntionTester)
