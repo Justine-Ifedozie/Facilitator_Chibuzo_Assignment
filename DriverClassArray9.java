@@ -10,14 +10,17 @@ public class DriverClassArray9 {
     int [] array = new int [userNumber];
     
     int count;
-    for (count = 0; count <= array.length -1; count++) {
+    for (count = 0; count < array.length; count++) {
         System.out.print("Enter array value: ");
         array[count] = keyboardInput.nextInt();
             }
             
-    int sumEven = ArrayOfIntegers.sumEvenArray(array);
-    System.out.print("The sum of even numbers in the array list is: " + sumEven);
-
-
+    int [] sumEven = ArrayOfIntegers.displayEvenArray(array);
+    
+  System.out.print("The even numbers in the array list is: ");
+    
+    for (int counter = 0; counter < sumEven.length; counter++) {
+           if (counter < sumEven.length -1) System.out.print(" ,");
+            }
        }
 }

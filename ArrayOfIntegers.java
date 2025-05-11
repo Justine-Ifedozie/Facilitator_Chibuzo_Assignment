@@ -95,5 +95,58 @@ public static int[] maxMini(int[] array) {
          }
 
 
-    }
+ //Function for returning the even numbers in an Array
+ 
+ public static int[] displayEvenArray(int[] even) {
+     int count, counter1 = 0, counter = 0;
+     for (count = 0; count < even.length; count++) {
+               if (even [count] % 2 == 0) {
+                   counter++;
+                     }
+                 }
+      int [] viewArray = new int [counter];
 
+      for (int counter2 = 0; counter2 < even.length; counter2++) {
+              if (even [counter2] % 2 == 0) {
+                     viewArray[counter1] = even[counter2];
+                         counter1++;
+                    }
+              }
+ return viewArray;
+         }
+
+
+//Function to find and print the odd Numbers in an array
+
+    public static int[] printOddNumbersIn(int [] odd) {
+        int count, counter = 0, counter1, counter2 = 0;
+        for (count = 0; count < odd.length; count++) {
+            if (odd[count] % 2 != 0) {
+            counter++;
+                }
+            }
+         
+         int [] viewArray = new int [counter];
+         for (counter1 = 0; counter1 < odd.length; counter1++) {
+             if (odd[counter1] % 2 !=0) {
+             viewArray [counter2] = odd[counter1];
+                 counter2++;
+                     }
+             }
+    return viewArray;
+        }
+
+
+    //Function to return a square of numbers in an array
+    
+    public static int[] squareOfNumbers(int [] square) {
+        int arrayCounter = 0, counter2 = 0;
+        int [] squareArray = new int [square.length];
+        for (int count = 0; count < square.length; count++) {
+            squareArray[counter2] = square[count] * square[count];
+                counter2++;
+            }
+    return squareArray;
+        }
+        
+  }
