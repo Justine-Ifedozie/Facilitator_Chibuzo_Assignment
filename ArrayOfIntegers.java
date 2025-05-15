@@ -65,6 +65,7 @@ public static int[] maxMini(int[] array) {
                if (array [count] < minimum) minimum =  array [count];
                 if (array [count] > maximum) maximum =  array [count];
         }
+
         return new int [] {minimum, maximum};
    }
 
