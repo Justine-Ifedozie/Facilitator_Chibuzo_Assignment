@@ -6,20 +6,22 @@ public class palindromeTest {
     System.out.print("Enter an integer: ");
     int userNumber = keyboardInput.nextInt();
     
-    num = userNumber;
-    baseNum = 0;
-    reverseNum = 0;
+    int num = userNumber;
+    int baseNum = 0;
+    int reverseNum = 0;
     
-    while (userNumber > 0)
+    while (userNumber  != 0) {
       baseNum = userNumber % 10;
-      reverseNum = (reversNum * userNumber) + baseNum;
-      userNumber = userNumber % 10;
-      
-      if (num == reverseNum) {
+      reverseNum = (reverseNum * 10) + baseNum;
+      userNumber = userNumber / 10;
+      }
+      if (num == reverseNum ) {
           System.out.print("This is a palindrome number");
               }
       else {
           System.out.print("This is not a palindrome number");
+          }
+    
       
     }
 }
