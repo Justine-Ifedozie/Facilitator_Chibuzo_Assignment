@@ -77,25 +77,12 @@ public class Kata {
 	return total;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
 //Method for returning a square number.
 	public static long SquareInteger(int x) {
 	long sqroot = x * x;
 	long result = sqroot;
 	return result;
 	}
-
-
 
 
 }
