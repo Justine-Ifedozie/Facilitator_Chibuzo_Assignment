@@ -3,9 +3,19 @@ public class tikTok {
 
         char [] [] array = new char [3] [3];
 
+        spacer(array);
+
         gameBoard(array);
 
         }
+        
+      public static void spacer(char array [][]){
+              for(int row = 0; row < 3; row++){
+                      for(int column = 0; column < 3; column++){
+                              array[row] [column] = ' ';   
+              }
+          }
+      }  
         
         
        public static void gameBoard(char [] [] line){
